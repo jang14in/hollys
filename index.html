@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할리스</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+    ul,ol,li{
+      list-style:none;
+    }
+    a{
+      color:#000;
+      text-decoration:none;
+    }
+
+    /* 기본스타일 */
+    .header{
+      padding:20px 0;
+      border-bottom:2px solid #f00;
+    }
+
+
+    /* 테블릿(960px이하) 스타일 */
+    @media (max-width:960px){
+      .header{
+        padding:10px;
+        background-color:#f00;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <section class="wrap">
+    <header class="header">
+      <div class="row">
+        <div class="first-nav">
+          <a href="#">창업설명회</a>
+          <a href="#">기업특판</a>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="./images/logo.gif" alt="로고"></a>
+        </div>
+        <div class="second-nav">
+          <a href="#">멤버십 로그인</a>
+          <a href="#">멤버십 가입</a>
+          <a href="#">고객센터</a>
+          <a href="#">English</a>
+          <a href="#">中文</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">HOLLYS Mall</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">HOLLYS News</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">HOLLYS Is</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>    
+  </section>
+</body>
+</html>
