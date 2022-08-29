@@ -81,6 +81,55 @@
         padding:10px;
         background-color:#f00;
       }
+      .header .row{
+        width:100%;
+      }
+      .header .row::before{
+        content:'';
+        display:block;
+      }
+      .first-nav,.second-nav{
+        display:none;
+      }
+      .btn-nav{
+        position:relative;
+        z-index:10;
+        width:30px;
+        height:30px;
+        margin-top:20px;
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content: space-between;
+      }
+      .btn-nav span{
+        height:5px;
+        background-color:#fff;
+      }
+      nav{
+        position:absolute;
+        left:0;
+        right:0;
+        top:-1000px;
+        background-color:#999;
+        transition:0.5s;
+      }
+      nav ul{
+        display:block;
+      }
+      nav li{
+        width:100%;
+        text-align:left;
+      }
+      nav li:hover{
+        background-color:transparent;
+      }
+      nav li a{
+        color:#fff;
+      }
+      .btn-nav:hover+nav{
+        top:88px;
+      }
+
     }
 
   </style>
